@@ -6,29 +6,14 @@ const Counter = ({ count, incrementCount, decrementCount }) => {
     <div>
       Counter
       <br />
-      <button
-        onClick={incrementCount}
-        style={{
-          backgroundColor: "blue",
-          color: "white",
-          padding: "10px",
-          fontSize: "20px",
-        }}
-      >
+      <button onClick={incrementCount} className="btn btn-primary">
+
         +
       </button>
-      <span style={{ padding: "10px" }}>{count}</span>
-      <button
-        onClick={decrementCount}
-        style={{
-          backgroundColor: "blue",
-          color: "white",
-          padding: "10px",
-          fontSize: "20px",
-        }}
-      >
-        -
-      </button>
+      <button onClick={decrementCount} className="btn btn-secondary">
+          -
+        </button>
+      <h2>{count}</h2>
     </div>
   );
 };
