@@ -7,12 +7,11 @@ const Counter = ({ count, incrementCount, decrementCount }) => {
       Counter
       <br />
       <button onClick={incrementCount} className="btn btn-primary">
-
         +
       </button>
       <button onClick={decrementCount} className="btn btn-secondary">
-          -
-        </button>
+        -
+      </button>
       <h2>{count}</h2>
     </div>
   );
